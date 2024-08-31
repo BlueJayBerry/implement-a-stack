@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int stack[128];
-int count;
+int count = 0;
 int arr[128] = {1,23,543,342};
 
 void push(int x){
@@ -26,7 +26,6 @@ int pop(){
 
 int main(int argc, char* argv[]){
     int i;
-
     for(i = 0; i < 4; i++){
         push(arr[i]);
     }
